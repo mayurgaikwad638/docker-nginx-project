@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "my-nginx"
-        DOCKER_HUB_REPO = "your-dockerhub-username/my-nginx"
+        DOCKER_HUB_REPO = "kubemayurr/my-nginx"
         CONTAINER_NAME = "my-nginx"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/docker-nginx-project.git'
+                git 'https://github.com/mayurgaikwad638/docker-nginx-project.git'
             }
         }
 
